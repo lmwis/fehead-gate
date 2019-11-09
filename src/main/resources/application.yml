@@ -1,0 +1,24 @@
+# 网关端口
+server:
+  port: 9000
+
+
+
+zuul:
+  sensitive-headers:
+#  routes:
+#    ANONYMOUS-CRITISM: /api/v1.0/anonymous/**
+#  ignored-services:
+#    - DATA-SERVER
+
+#  ignored-patterns:  模版忽略
+
+# 注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://open.fehead.com:8761/eureka
+
+spring:
+  application:
+    name: fehead-api-gateway
